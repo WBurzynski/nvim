@@ -29,6 +29,8 @@ Plug 'rhysd/vim-clang-format'
 Plug 'jiangmiao/auto-pairs'
 " syntax highlightning based on LSP
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+" doxygen integration
+Plug 'kkoomen/vim-doge'
 call plug#end()
 
 " source configuration files
@@ -52,3 +54,5 @@ source $HOME/.config/nvim/airline.vim
 source $HOME/.config/nvim/latex.vim
 " cheatsheet
 source $HOME/.config/nvim/which-key.vim
+" doxygen
+source $HOME/.config/nvim/doge.vim

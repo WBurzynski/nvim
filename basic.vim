@@ -55,6 +55,7 @@ set noshowmode
 set nobackup
 set nowritebackup
 
+" enable mouse in all modes
 set mouse=a
 
 "disable wrapping of long lines
@@ -85,7 +86,7 @@ tnoremap <C-w> <C-\><C-n>
 tnoremap ,, <C-\><C-n>
 nnoremap <leader>un :UndotreeToggle<cr>
 
-" quit neovim?
+" quit neovim
 map Q :q!<CR>
 
 map <leader>acl :set list!<CR>

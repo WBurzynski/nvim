@@ -16,6 +16,7 @@ let g:coc_global_extensions = [
 	\ 'coc-terminal',
 	\ 'coc-rls',
 	\ 'coc-explorer',
+	\ 'coc-clangd',
 	\]
 
 " coc-explorer
