@@ -30,7 +30,7 @@ Plug 'jiangmiao/auto-pairs'
 " syntax highlightning based on LSP
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 " doxygen integration
-Plug 'kkoomen/vim-doge'
+Plug 'kkoomen/vim-doge', { 'do': { ->doge#install() }}
 call plug#end()
 
 " source configuration files

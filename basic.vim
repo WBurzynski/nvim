@@ -6,7 +6,7 @@ let mapleader =" "
 syntax on
 
 "draw line on column 80
-"set colorcolumn=80
+set colorcolumn=80
 
 "set tab width to 4
 set tabstop=4 softtabstop=4 shiftwidth=4
