@@ -17,10 +17,19 @@ Plug 'junegunn/fzf.vim'
 Plug 'puremourning/vimspector'
 " undo tree
 Plug 'mbbill/undotree'
-" gruvbox colorscheme
+" colorschemes
 Plug 'gruvbox-community/gruvbox'
-" more color schemes
-Plug 'flazz/vim-colorschemes'
+Plug 'cseelus/vim-colors-lucid'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'christophermca/meta5'
+Plug 'fcpg/vim-orbital'
+Plug 'jaredgorski/spacecamp'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'ayu-theme/ayu-vim'
+Plug 'ajmwagar/vim-deus'
+Plug 'whatyouhide/vim-gotham'
+" indent line
+Plug 'Yggdroot/indentLine'
 " leader key cheatsheet
 Plug 'liuchengxu/vim-which-key'
 " clang-format integration
@@ -31,6 +40,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 " doxygen integration
 Plug 'kkoomen/vim-doge', { 'do': { ->doge#install() }}
+" TOML syntax highlightning
+Plug 'cespare/vim-toml'
+" GLSL highlightning
+Plug 'tikhomirov/vim-glsl'
 call plug#end()
 
 " source configuration files
@@ -56,3 +69,7 @@ source $HOME/.config/nvim/latex.vim
 source $HOME/.config/nvim/which-key.vim
 " doxygen
 source $HOME/.config/nvim/doge.vim
+" indent
+source $HOME/.config/nvim/indent.vim
+"GLSL 
+source $HOME/.config/nvim/glsl.vim

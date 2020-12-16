@@ -5,8 +5,8 @@ let mapleader =" "
 "enable syntax highlightning
 syntax on
 
-"draw line on column 80
-set colorcolumn=80
+"draw line on column last column
+set colorcolumn=100
 
 "set tab width to 4
 set tabstop=4 softtabstop=4 shiftwidth=4
@@ -21,7 +21,7 @@ set cursorline
 "set cursorcolumn
 
 "disable highlightning of all occurences of completed search
-set nohlsearch
+" set nohlsearch
 
 "highlight first occurence of search
 set incsearch
@@ -64,6 +64,21 @@ set nowrap
 "enable 24-bit color
 set termguicolors
 
+" toggle highlightning of all search occurences
+noremap <Leader>h :set hlsearch! hlsearch?<CR>
+
+" close buffer
+noremap <Leader>bc :bd<CR>
+
+" folding brackets
+set foldmethod=marker
+set foldmarker={,}
+set foldcolumn=3
+
+" persistent folds across vim sessions
+autocmd BufWinLeave *.* mkview 
+autocmd BufWinEnter *.* silent loadview
+
 let g:netrw_banner=0
 let g:netrw_bufsettings='noma nomod nu nobl nowrap ro'
 autocmd BufWritePost *Xresources,*Xdefaults !xrdb -load %
@@ -73,6 +88,12 @@ vmap cp "+y
 
 " copy to system clipboard (normal mode)
 nnoremap cp "+y
+
+" Coc navigation
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 nnoremap cpp "+yy
 nnoremap zp "+p
